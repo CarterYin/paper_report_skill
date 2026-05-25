@@ -95,6 +95,10 @@ If unsure: find the sentence in the paper that supports it. No sentence → comm
 
 ### Step 2: Understand the Reference Format
 
+The reference format can be any template system — Typst (typslides, touying, polylux),
+LaTeX Beamer, Markdown, etc. The `example/` directory in this skill provides a
+typslides-based reference, but users may provide their own template of any type.
+
 ```
 1. List all files: find ref/ -type f
 2. Identify: content file vs template/config files

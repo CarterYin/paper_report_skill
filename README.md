@@ -71,6 +71,30 @@ git clone git@github.com:CarterYin/paper_report_skill.git \
 
 或在 Claude Code 会话中通过 `/plugin` 安装。
 
+## 示例模板
+
+`example/` 目录包含一个完整的 Typst typslides 参考模板：
+
+```
+example/
+├── ttrv_report/               ← Typst 项目模板
+│   ├── template/main.typ      ← 报告内容文件（skill 仅修改此文件）
+│   ├── lib.typ                ← 库入口
+│   ├── utils.typ              ← 主题/幻灯片/进度条等工具函数
+│   ├── typslides.typ          ← typslides 包主文件
+│   ├── typst.toml             ← 包配置
+│   ├── LICENSE / README.md
+│   └── (论文PDF存放于此，示例中未包含)
+└── ttrv-recovery-analysis.md  ← 论文深度分析笔记（额外参考）
+```
+
+**重要说明**：
+
+- 此示例基于 [typslides](https://github.com/manjavacas/typslides) 包（`@preview/typslides:1.3.2`），主题为 `"bluey"`
+- **这只是一个示例模板，并非唯一选择**。用户可以使用任意 Typst 模板（如 touying、polylux 等）、LaTeX Beamer、Markdown 等任何格式作为参考
+- Skill 的核心逻辑是：分析用户提供的参考格式 → 复制模板文件 → 仅修改内容文件。无论参考格式是什么，流程一致
+- 如果需要使用其他模板，只需将模板文件放在参考文件夹中，skill 会自动适配
+
 ## License
 
 MIT
