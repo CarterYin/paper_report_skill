@@ -147,6 +147,15 @@ After writing, verify formatting. For Typst specifically:
 
 **Tables:** Ensure column count matches. Use `[*Header*]` for headers.
 
+**Critical — Table + Commentary Layout:** Large tables push trailing text
+to the next slide, breaking the table-to-commentary visual flow. Rules:
+- Put key takeaways / commentary text *above* the table, not below.
+- Commentary before table: audience reads the conclusion first, then sees the data.
+- Reduce table font size (9-10pt) and inset (4pt) for dense tables.
+- Remove `#v()` spacing between table and following content — it wastes space.
+- If two small tables share a slide, stack them without extra spacing.
+- Post-table text should be at most 1 line; if longer, move it above the table.
+
 **Comments:** `//` for line, `/* */` for block. Use block comments to hide
 personal analysis while preserving it in source.
 
